@@ -1,3 +1,27 @@
+url: "" # the base hostname & protocol for your site, e.g. https://example.com
+
+#permalink: pretty
+template_engine: erb
+
+collections:
+  courses:
+    output: true
+    permalink: pretty
+    future: true
+    relations:
+      has_many: units
+
+  units:
+    output: true
+    permalink: pretty
+    future: true
+    relations:
+      belongs_to:
+        - course
+
+pagination:
+  enabled: true
+
 # Welcome to Bridgetown!
 #
 # This config file is for settings that affect your whole site, values
@@ -13,11 +37,6 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
-
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
-
-permalink: pretty
-template_engine: erb
 
 # Other options you might want to investigate:
 #
