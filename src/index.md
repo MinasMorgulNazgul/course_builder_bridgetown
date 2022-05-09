@@ -4,17 +4,11 @@
 layout: default
 ---
 
-# Welcome to your new Bridgetown website.
+# Добро пожаловать в будущий конструктор курсов.
 
-You can learn more about how to build and deploy your new website by reading the  [Bridgetown documentation](https://www.bridgetownrb.com/docs).
+Здесь пока ничего интересного нет, но вы уже можете занести донаты бедным студентам на разработку :)
 
-You can choose a [theme](https://github.com/topics/bridgetown-theme) or add some [plugins](https://www.bridgetownrb.com/plugins/) to get started quickly.
-
-Be sure to check out the [Bridgetown Cards](https://bridgetown.cards) community site for helpful tips & tricks.
-
-If you run into any issues or have additional questions, please join us in our [Discord chat](https://discord.gg/4E6hktQGz4) or in [GitHub discussions](https://github.com/bridgetownrb/bridgetown/discussions).
-
-_Have fun and **good luck**!_
+_Добра и **удачи**!_
 
 ----
 
