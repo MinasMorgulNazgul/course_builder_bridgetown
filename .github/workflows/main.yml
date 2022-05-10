@@ -38,3 +38,4 @@ jobs:
           git add -A
           git commit -m 'deploy'
           git push -f https://minasmorgulnazgul:${{ secrets.SECRET_KEY }}@github.com/MinasMorgulNazgul/course_builder_bridgetown.git output
+          
