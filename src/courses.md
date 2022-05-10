@@ -7,10 +7,14 @@ paginate:
 
 <ul>
   <% paginator.resources.each do |item| %>
-    <li>
+    <li class="title is-5">
       <a href="<%= item.relative_url %>"><%= item.data.name %></a>
     </li>
   <% end %>
 </ul>
 
-The list of courses is being updated
+<div class="mt-6">
+  <p>
+    The list of courses is being updated
+  </p>
+</div>

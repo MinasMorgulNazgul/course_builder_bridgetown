@@ -2,10 +2,18 @@
   <img src="<%= relative_url '/images/logo2.png' %>" alt="Logo" />
 </header>
 
-<nav>
-  <ul>
+<aside class="menu ml-5">
+  <p class="menu-label">
+    General
+  </p>
+  <ul class="menu-list">
     <li><a href="<%= relative_url '/' %>">Home</a></li>
-    <li><a href="<%= relative_url '/courses' %>">Courses</a></li>
-    <li><a href="<%= relative_url '/units' %>">Units</a></li>
   </ul>
-</nav>
+  <p class="menu-label">
+    Education
+  </p>
+  <ul class="menu-list">
+    <li><a href="<%= relative_url '/course_builder_bridgetown/courses' %>">Courses</a></li>
+    <li><a href="<%= relative_url '/course_builder_bridgetown/units' %>">Units</a></li>
+  </ul>
+</aside>
