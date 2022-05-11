@@ -37,6 +37,6 @@ jobs:
           cp -r ./course_builder_bridgetown/* ./
           git add -A
           git commit -m 'deploy'
-          git push -f https://minasmorgulnazgul:${{ secrets.SECRET_KEY }}@github.com/MinasMorgulNazgul/course_builder_bridgetown.git output
+          git push -f https://minasmorgulnazgul:${{ secrets.GITHUB_TOKEN }}@github.com/MinasMorgulNazgul/course_builder_bridgetown.git output
           
           
