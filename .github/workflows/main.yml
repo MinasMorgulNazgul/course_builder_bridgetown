@@ -46,3 +46,4 @@ jobs:
           git commit -m 'deploy'
           git push -f https://minasmorgulnazgul:${{ secrets.GITHUB_TOKEN }}@github.com/MinasMorgulNazgul/course_builder_bridgetown.git output
           
+          
