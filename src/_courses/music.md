@@ -1,10 +1,11 @@
 ---
 layout: course
-name: "Music course"
+name: "Обучение музыке"
 technical_name: music
-volume: volume
+volume: 18 часов
 annotation: annotation
 description: test123
+price: 999
 ---
 
 ```

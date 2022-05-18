@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="<%= site.locale %>">
+<head>
+  <%= render "head", metadata: site.metadata, title: resource.data.title %>
+</head>
+<body>
+<%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
+<div class="columns">
+  <div class="column is-1">
+    <%= render Shared::Menu.new(metadata: site.metadata, resource: resource) %>
+  </div>
+  <div class="column">
+    <main>
+      <%= yield %>
+    </main>
+  </div>
+  <div class="column is-1"></div>
+</div>
+
+<%= render "footer", metadata: site.metadata %>
+</body>
+</html>
