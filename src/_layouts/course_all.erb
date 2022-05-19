@@ -6,10 +6,10 @@
 <body>
 <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 <div class="columns">
-  <div class="column is-1">
+  <div class="column is-1 ml-6">
     <%= render Shared::Menu.new(metadata: site.metadata, resource: resource) %>
   </div>
-  <div class="column">
+  <div class="column mr-6">
     <main>
       <%= yield %>
     </main>

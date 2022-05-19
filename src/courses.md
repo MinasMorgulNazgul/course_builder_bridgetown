@@ -5,28 +5,25 @@ paginate:
   collection: courses
 ---
 
-<div class="columns">
-  <div class="column is-11">
-    <ul>
-      <% paginator.resources.each do |item| %>
-        <li>
-          Длительность: <%= item.data.volume %>
-        </li>
-        <li class="title is-5">          
-          <a href="<%= item.relative_url %>"><%= item.data.name %></a>
-        </li>
-      <% end %>
-    </ul>
-  </div> 
-  <div class="column is-1">
-    <ul>
-      <% paginator.resources.each do |item| %>
-        <li>
+<div>
+  <ul>
+    <% paginator.resources.each do |item| %>
+      <div class="box columns mt-2">
+        <div class="column is-11">
+          <li>
+            Длительность: <%= item.data.volume %>
+          </li>
+          <br>
+          <li class="title is-5">          
+            <a href="<%= item.relative_url %>"><%= item.data.name %></a>
+          </li>
+        </div>
+        <div class="column is-1">
           <p>&nbsp;</p>
           <p class="has-text-weight-bold"><%= item.data.price %> &#8381;</p>
           <p>&nbsp;</p>
-        </li>
-      <% end %>  
-    </ul>
-  </div>  
+        </div>
+      </div>
+    <% end %>
+  </ul>
 </div>
