@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 | Your awesome title</title>
+
+<meta name="description" content="Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+
+<link rel="stylesheet" href="/course_builder_bridgetown/_bridgetown/static/css/main.f3bfed77ad22f6f243ab.css" />
+<script src="/course_builder_bridgetown/_bridgetown/static/js/main.1b4d72bff7bf63551925.js" defer></script>
+<script type="module">let lastmod = 0
+function startReloadConnection() {
+  const evtSource = new EventSource("/course_builder_bridgetown/_bridgetown/live_reload")
+  evtSource.onmessage = event => {
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  }
+  evtSource.onerror = event => {
+    if (evtSource.readyState === 2) {
+      // reconnect with new object
+      evtSource.close()
+      console.warn("Live reload: attempting to reconnect in 3 seconds...")
+
+      setTimeout(() => startReloadConnection(), 3000)
+    }
+  }
+}
+setTimeout(() => {
+  startReloadConnection()
+}, 500)
+</script>
+
+  </head>
+  <body class="default  has-background-white-ter">
+    <div class="columns">
+      <div class="column is-one-fifth">
+        <nav>
+  <div class="navbar-brand">
+    <img src="/course_builder_bridgetown/images/logo2.png" class="image is-128x128" alt="Logo" />
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true">тест</span>
+    </a>
+  </div>
+</nav>
+
+      </div>
+      <div class="column">
+        <main>
+          <h1>404</h1>
+
+<p><strong>Page not found :(</strong></p>
+<p>The requested page could not be found.</p>
+
+        </main>
+      </div>
+    </div>
+
+    <footer class="footer pt-3 pb-3 mt-6">
+  <div class="content has-text-centered">
+    <p>
+      Contact me at <a href="mailto:your-email@example.com">your-email@example.com</a>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
